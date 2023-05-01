@@ -1,0 +1,52 @@
+// breakpoints
+$laptop: 1200px;
+$tablet: 1023px;
+$mobile: 767px;
+
+// container
+$container-desktop-width: 1200px;
+$container-laptop-width: 960px;
+$container-tablet-width: 100%;
+$container-mobile-width: 100%;
+
+// colors
+$primary: #3369f3;
+$primary-light: lighten($primary, 10%);
+$secondary: gray;
+$success: #2cc990;
+$warning: #fec606;
+$danger: #ff2f2f;
+$text-color: #18233a;
+$text-color-secondary: darkgray;
+
+// fonts
+$font-primary: 'Inter', sans-serif;
+$font-secondary: 'Maven Pro', sans-serif;
+$font-thirdly: 'Raleway', sans-serif;
+$fonts-reboot:
+  /* Cross-platform generic font family (default user interface font) */
+  system-ui,
+  /* Safari for macOS and iOS (San Francisco) */
+  -apple-system,
+  /* Windows */
+  'Segoe UI',
+  /* Android */
+  Roboto,
+  /* Basic web fallback */
+  'Helvetica Neue', Arial,
+  /* Linux */
+  'Noto Sans',
+  'Liberation Sans',
+  /* Sans serif fallback */
+  sans-serif,
+  /* Emoji fonts */
+  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+  'Noto Color Emoji';
+
+// other
+$default-duration: 230ms;
+
+// imports
+@import './fonts';
+@import './mixins';
+@import './animations';

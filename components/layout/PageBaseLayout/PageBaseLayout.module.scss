@@ -5,7 +5,7 @@
 
   header {
     min-height: 50px;
-    background-color: maroon;
+    background-color: $primary;
     color: white;
   }
 
@@ -18,9 +18,13 @@
       flex-shrink: 0;
       flex-basis: 200px;
       border-right: 1px solid #ddd;
+      @include mobile() {
+        display: none;
+      }
     }
 
     main {
+      padding: 15px;
       flex-grow: 1;
       background-color: white;
     }
@@ -28,7 +32,7 @@
 
   footer {
     min-height: 50px;
-    background-color: lightcoral;
+    background-color: $secondary;
     color: white;
   }
 }

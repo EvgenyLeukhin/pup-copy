@@ -1,0 +1,64 @@
+// outline
+@mixin outline {
+  outline: 1px solid $danger;
+}
+
+// laptop
+@mixin laptop {
+  @media screen and (max-width: $laptop) {
+    @content;
+  }
+}
+
+// tablet
+@mixin tablet {
+  @media screen and (max-width: $tablet) {
+    @content;
+  }
+}
+
+// mobile
+@mixin mobile {
+  @media screen and (max-width: $mobile) {
+    @content;
+  }
+}
+
+// status-text-color
+@mixin status-text-color($color, $dynamic: false) {
+  color: $color;
+  transition: all $default-duration;
+
+  @if $dynamic {
+    &:hover {
+      color: darken($color, 15%);
+    }
+
+    &:active {
+      color: darken($color, 25%);
+    }
+  }
+}
+
+// status-bg-color
+@mixin status-bg-color($color, $dynamic: false) {
+  background-color: $color;
+  transition: all $default-duration;
+
+  // for links
+  &:visited {
+    background-color: $color;
+  }
+
+  @if $dynamic {
+    &:hover {
+      color: white;
+      background-color: darken($color, 15%);
+    }
+
+    &:active {
+      color: white;
+      background-color: darken($color, 25%);
+    }
+  }
+}
