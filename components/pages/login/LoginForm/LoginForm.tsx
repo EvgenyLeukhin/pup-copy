@@ -24,6 +24,7 @@ import styles from './LoginForm.module.scss';
             type="text" 
             name="username" 
             placeholder="Enter username" 
+            value="t.testov01"
             required 
           />
         </div>
@@ -33,10 +34,11 @@ import styles from './LoginForm.module.scss';
           <label htmlFor="password">Password</label>
 
           <input 
-            id='password' 
-            type="password" 
+            id='password'
+            type="password"
             name="password" 
             placeholder="Enter password" 
+            value="aethe5ooth1Doqu"
             required 
           />
         </div>
