@@ -1,0 +1,25 @@
+@import '~normalize.css';
+
+* {
+  box-sizing: border-box;
+
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+html,
+body {
+  // full height growing
+  height: 100%;
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+
+    // full height growing
+    height: 100%;
+    background-color: #eee;
+  }
+}
