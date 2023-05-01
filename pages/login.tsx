@@ -1,4 +1,5 @@
 import PageBaseLayout from '@/components/layout/PageBaseLayout/PageBaseLayout';
+import LoginForm from '@/components/pages/login/LoginForm/LoginForm';
 import Head from 'next/head'
 import Link from 'next/link';
 
@@ -16,6 +17,8 @@ const LoginPage = () => {
         <h1>Login page</h1>
 
         <Link href="/">To home page</Link>
+
+        <LoginForm />
       </PageBaseLayout>
     </>
   )
