@@ -2,6 +2,18 @@
   "name": "pup-copy",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EvgenyLeukhin/pup-copy.git"
+  },
+  "bugs": "https://github.com/EvgenyLeukhin/pup-copy/issues",
+  "homepage": "https://EvgenyLeukhin.github.io/pup-copy",
+  "author": {
+    "name": "Evgeny Leukhin",
+    "email": "EvgenyLeukhin@ya.ru",
+    "url": "https://vk.com/leukhin_ei"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,9 +21,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
     "@types/node": "18.16.3",
     "@types/react": "18.2.0",
     "@types/react-dom": "18.2.1",
+    "axios": "^1.4.0",
     "classnames": "^2.3.2",
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.2",
@@ -19,7 +33,13 @@
     "normalize.css": "^8.0.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-redux": "^8.0.5",
     "sass": "^1.62.1",
     "typescript": "5.0.4"
+  },
+    "engines": {
+    "node": ">=19.7.0",
+    "npm": ">=9.6.1",
+    "yarn": ">=1.22.17"
   }
 }
